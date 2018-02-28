@@ -1,0 +1,25 @@
+general:
+ project_name: Helloworld
+ project_technology: Nodejs
+scm:
+ scm_type: git
+ provision: true
+ repo_name: HelloWorld
+ repo_type: public
+build:
+ build_tool: jenkins
+ provision: true
+ jenkins_infra_provision:
+  provision: true
+ compile:
+ unit_test:
+ static_scan:
+publish:
+deploy:
+ env:
+  dev:
+   runtime_infra_provision:
+    provision: true
+ test:
+  runtime_infra_provision:
+   provision: true

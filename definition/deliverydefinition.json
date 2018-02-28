@@ -1,0 +1,37 @@
+{
+  "scm": {
+    "repo_type": "public", 
+    "provision": true, 
+    "scm_type": "git", 
+    "repo_name": "HelloWorld"
+  }, 
+  "general": {
+    "project_name": "Helloworld", 
+    "project_technology": "Nodejs"
+  }, 
+  "build": {
+    "compile": null, 
+    "unit_test": null, 
+    "static_scan": null, 
+    "jenkins_infra_provision": {
+      "provision": true
+    }, 
+    "provision": true, 
+    "build_tool": "jenkins"
+  }, 
+  "publish": null, 
+  "deploy": {
+    "test": {
+      "runtime_infra_provision": {
+        "provision": true
+      }
+    }, 
+    "env": {
+      "dev": {
+        "runtime_infra_provision": {
+          "provision": true
+        }
+      }
+    }
+  }
+}
