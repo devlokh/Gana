@@ -1,9 +1,0 @@
-setup.py
-cmdline_gana.egg-info/PKG-INFO
-cmdline_gana.egg-info/SOURCES.txt
-cmdline_gana.egg-info/dependency_links.txt
-cmdline_gana.egg-info/entry_points.txt
-cmdline_gana.egg-info/top_level.txt
-gana/__init__.py
-gana/__main__.py
-gana/gana.py
