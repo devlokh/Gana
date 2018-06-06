@@ -5,6 +5,7 @@ __version__ = "0.2.0"
 
 import sys
 import yaml
+from subprocess import call
 
 def main():
     with open('./gana/definition.yml', 'r') as stream:
@@ -14,5 +15,4 @@ def main():
                 yaml.dump(definition['build'],outfile,default_flow_style=False)
         except yaml.YAMLError as exc:
             print(exc)
-
-main()
+    status = call("jenkins-jobs --conf ./jenkins/jenkins.ini update data.yml")
