@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
-
-"""bootstrap.bootstrap: provides entry point main()."""
-
-
 __version__ = "0.2.0"
 
 
 import sys
-
+import yaml
 
 def main():
-    print("Executing bootstrap version %s." % __version__)
+    with open("./gana/definition.yml", 'r') as stream:
+        try:
+            print(yaml.load(stream))
+        except yaml.YAMLError as exc:
+            print(exc['job'])
