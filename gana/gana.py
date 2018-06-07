@@ -8,6 +8,16 @@ import yaml
 from subprocess import call
 
 def main():
+    print("""    __
+    __----__
+    {   p p  }
+    {____||__}__
+    /  || \/ /
+    / /  - |_/
+    \_\    |
+    |= = =|
+    '-----'
+    |_) |_)""")
     with open('./gana/definition.yml', 'r') as stream:
         try:
             definition = yaml.load(stream)
